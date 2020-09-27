@@ -1,5 +1,6 @@
-package `in`.gsrathoreniks.dagger_hilt
+package `in`.gsrathoreniks.dagger_hilt.ui
 
+import `in`.gsrathoreniks.dagger_hilt.R
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
