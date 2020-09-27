@@ -3,9 +3,7 @@ package `in`.gsrathoreniks.dagger_hilt.data.networkdata
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName
 
-data class BlogNetworkEntity (
-
-//    map the model fields with actual json keys
+class BlogNetworkEntity(
 
     @SerializedName("pk")
     @Expose
@@ -19,12 +17,11 @@ data class BlogNetworkEntity (
     @Expose
     var body: String,
 
-    @SerializedName("category")
-    @Expose
-    var category: String,
-
     @SerializedName("image")
     @Expose
     var image: String,
 
+    @SerializedName("category")
+    @Expose
+    var category: String
 )

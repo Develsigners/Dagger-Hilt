@@ -6,15 +6,17 @@ import javax.inject.Inject
 
 class CacheMapper
 @Inject
-constructor(): EntityMapper<BlogCacheEntity,Blog> {
+constructor():
+    EntityMapper<BlogCacheEntity, Blog> {
+
     override fun mapFromEntity(entity: BlogCacheEntity): Blog {
-       return Blog(
-           id = entity.id,
-           title = entity.title,
-           body = entity.body,
-           category = entity.category,
-           image =  entity.image
-       )
+        return Blog(
+            id = entity.id,
+            title = entity.title,
+            body = entity.body,
+            image = entity.image,
+            category = entity.category
+        )
     }
 
     override fun mapToEntity(domainModel: Blog): BlogCacheEntity {
@@ -22,12 +24,12 @@ constructor(): EntityMapper<BlogCacheEntity,Blog> {
             id = domainModel.id,
             title = domainModel.title,
             body = domainModel.body,
-            category = domainModel.category,
-            image =  domainModel.image
+            image = domainModel.image,
+            category = domainModel.category
         )
     }
 
-    fun mapFromEntityList(entities: List<BlogCacheEntity>):List<Blog>{
-        return entities.map {mapFromEntity(it)}
+    fun mapFromEntityList(entities: List<BlogCacheEntity>): List<Blog>{
+        return entities.map { mapFromEntity(it) }
     }
 }
