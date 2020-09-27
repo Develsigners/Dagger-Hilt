@@ -1,6 +1,6 @@
 # Dagger-Hilt
 
-##This project is to learn the implementation of Dagger-Hilt in Andorid app
+## This project is to learn the implementation of Dagger-Hilt in Andorid app
 
 ### Using
 1. Room [Cache storage]
